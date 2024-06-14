@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASEDUCATIVA</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" class="favicon" href="imagenes/faviconaseduca.png" type="image/png" sizes="64x32">
+    <link rel="stylesheet" href="font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#inicio">
+            <img src="imagenes/aseducativa.png" alt="Logo" width="100" height="50" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium " href="#cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium" href="#crecimiento-profesional">Profesional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium" href="#ensenar">Enseñar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium" href="#ubicacion">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link roboto-medium" href="#contactanos">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="search">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path fill="#006400" d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                    </svg>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="shopping-cart">
+                            <path fill="#006400" d="M56.262,17.837H26.748c-0.961,0-1.508,0.743-1.223,1.661l4.669,13.677c0.23,0.738,1.044,1.336,1.817,1.336h19.35
+                                c0.773,0,1.586-0.598,1.815-1.336l4.069-14C57.476,18.437,57.036,17.837,56.262,17.837z"></path>
+                            <circle fill="#006400" cx="29.417" cy="50.267" r="4.415"></circle>
+                            <circle fill="#006400" cx="48.099" cy="50.323" r="4.415"></circle>
+                            <path fill="#006400" d="M53.4,39.004H27.579L17.242,9.261H9.193c-1.381,0-2.5,1.119-2.5,2.5s1.119,2.5,2.5,2.5h4.493l10.337,29.743H53.4
+                                c1.381,0,2.5-1.119,2.5-2.5S54.781,39.004,53.4,39.004z"></path>
+                        </svg>
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Secciones -->
+    <section id="inicio" class="banner1">
+        <div class="overlay"></div>
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+                    <h1 class="text-white">Su <span class="highlight">mejor</span> aliado para capacitaciones y cursos</h1>
+                    <a href="#" class="btn btn-success mt-3">Explorar</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="white-box">
+                        <p>Total <span class="highlight">calidad</span> para su aprendizaje</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="cursos" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center mb-5 roboto-medium">Nuestros Cursos</h2>
+            </div>
+            <div class="row">
+                <!-- Tarjeta de curso -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico en Criminología</h5>
+                            <p class="card-text">Es una oportunidad única para adentrarse en el mundo del crimen, la seguridad y la prevención del delito.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite la estructura de la tarjeta de curso para los 11 cursos restantes -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico de Secretariado</h5>
+                            <p class="card-text">Diseñado para proporcionar las habilidades y conocimientos necesarios para desempeñar un papel fundamental en la oficina.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Añadir las otras tarjetas de curso aquí -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico Administrativo</h5>
+                            <p class="card-text">Es una oportunidad única para desarrollar habilidades y conocimientos en la gestión de empresas y organizaciones.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta de curso -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico en Recursos Humanos</h5>
+                            <p class="card-text">Es una oportunidad excepcional para adquirir las habilidades y conocimientos necesarios para desempeñar un papel crucial en la gestión de personal.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite la estructura de la tarjeta de curso para los 11 cursos restantes -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico en Auxiliar Contable</h5>
+                            <p class="card-text">Es una oportunidad excepcional para adquirir habilidades y conocimientos esenciales en el campo de la contabilidad y las finanzas.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Añadir las otras tarjetas de curso aquí -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico de Mercadeo y Ventas</h5>
+                            <p class="card-text">Es una oportunidad emocionante para adquirir habilidades esenciales en el campo del marketing y las ventas.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta de curso -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico en Control de Calidad</h5>
+                            <p class="card-text">Es una oportunidad valiosa para adquirir habilidades esenciales en el campo de gestión de la calidad y la auditoría.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite la estructura de la tarjeta de curso para los 11 cursos restantes -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico en Asistente de Preescolar</h5>
+                            <p class="card-text">Emocionante oportunidad para adquirir habilidades especializadas en el cuidado y educación de niños en la etapa preescolar.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Añadir las otras tarjetas de curso aquí -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Curso de Microsoft Excel + Power BI</h5>
+                            <p class="card-text">Oportunidad para dominar dos herramientas esenciales para el análisis de datos y la toma de decisiones en entornos empresariales.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Tarjeta de curso -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Curso de Microsoft Power BI</h5>
+                            <p class="card-text">Inmersión intensiva en una de las herramientas más poderosas para la visualización y análisis de datos.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite la estructura de la tarjeta de curso para los 11 cursos restantes -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Curso de Computación OPC</h5>
+                            <p class="card-text">Oportunidad integral para adquirir habilidades esenciales en el manejo de herramientas informáticas y programas comerciales.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Añadir las otras tarjetas de curso aquí -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Técnico en Mantenimiento y Reparación de Computadoras</h5>
+                            <p class="card-text">Es una oportunidad única para adquirir habilidades especializadas en el campo de la tecnología y la informática.</p>
+                            <a href="#" class="btn btn-success mt-auto">Conocer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="nosotros" class="banner2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <!-- Columna izquierda con la imagen de fondo -->
+                    <div class="image-container"></div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Columna derecha con la información -->
+                    <div class="info-container p-4">
+                        <h1 class="roboto-bold">Nos caracterizamos en:</h1>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="imagenes/certifiacion.png" alt="Icono Certificado" class="mr-3 icon">
+                            <div>
+                                <h4 class="font-weight-bold">Certificados</h4>
+                                <p class="roboto-light">Certificación física para cada curso completado, alineado para aval en entidades regidas por el servicio civil.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="imagenes/soporte.jpg" alt="Icono Soporte" class="mr-3 icon">
+                            <div>
+                                <h4 class="font-weight-bold">Soporte</h4>
+                                <p class="roboto-light">Asesores y profesores dispuestos a ayudar en todo momento.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="imagenes/planes.png" alt="Icono Plan" class="mr-3 icon">
+                            <div>
+                                <h4 class="font-weight-bold">Planes de Estudio</h4>
+                                <p class="roboto-light">Planes de estudio actualizados a la demanda laboral actual, conocimiento directo para aplicar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="crecimiento-profesional" class="banner3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <!-- Columna izquierda con texto y botón -->
+                    <div class="text-container p-4">
+                        <p class="text-white roboto-light">
+                            Te queremos felicitar por buscar tu crecimiento profesional, queremos ser parte de tu desarrollo, durante más de 15 años hemos formado y brindado educación a estudiantes con el mejor servicio y cursos actualizados, funcionales y de mucho valor según las metas que te propongas.</p>
+                        <a href="#" class="btn btn-light mt-3">Explorar</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Columna derecha con imagen -->
+                    <img src="imagenes/imagen3.png" alt="Imagen Crecimiento Profesional" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="enseñar" class="banner4">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Columna derecha con imagen -->
+                    <img src="imagenes/pymes.png" alt="Imagen Enseñar" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <!-- Columna izquierda con texto -->
+                    <div class="text-container p-4">
+                        <h2 class="roboto-bold">Enseñar es nuestra pasión</h2>
+                        <p class="roboto-light">
+                            Te queremos felicitar por buscar tu crecimiento profesional, queremos ser parte de tu desarrollo, durante más de 15 años hemos formado y brindado educación a estudiantes con el mejor servicio y cursos actualizados, funcionales y de mucho valor según las metas que te propongas.
+                        </p>
+                        <a href="#" class="btn btn-success">Más Información</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="banner5">
+        <div class="container text-center">
+            <div class="card custom-card mx-auto shadow p-4" style="max-width: 600px;">
+                <img src="imagenes/manual-del-conductor.jpg" class="card-img-top img-fluid mx-auto d-block" style="max-width: 800px;" alt="Curso Teórico de Manejo Costa Rica">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="rate" style="font-size: 24px;">
+                            <!-- Estrellas utilizando Unicode -->
+                            <span style="color: #fdd835;">&#9733;</span>
+                            <span style="color: #fdd835;">&#9733;</span>
+                            <span style="color: #fdd835;">&#9733;</span>
+                            <span style="color: #fdd835;">&#9733;</span>
+                            <span style="color: #fdd835;">&#9733;</span>
+                        </div>
+                        <div>
+                            <p class="roboto-medium mb-0">Por Pablo</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="card-title">Curso Teórico de Manejo Costa Rica</h5>
+                    <p class="card-text">
+                        Descripción breve del curso aquí.
+                    </p>
+                    <div class="text-center mt-3">
+                        <h4 class="text-success mb-3">₡10.000</h4>
+                        <a href="#" class="btn btn-primary custom-btn-width d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="shopping-cart">
+                                <path fill="#ffffff" d="M56.262,17.837H26.748c-0.961,0-1.508,0.743-1.223,1.661l4.669,13.677c0.23,0.738,1.044,1.336,1.817,1.336h19.35
+                                    c0.773,0,1.586-0.598,1.815-1.336l4.069-14C57.476,18.437,57.036,17.837,56.262,17.837z"></path>
+                                <circle fill="#ffffff" cx="29.417" cy="50.267" r="4.415"></circle>
+                                <circle fill="#ffffff" cx="48.099" cy="50.323" r="4.415"></circle>
+                                <path fill="#ffffff" d="M53.4,39.004H27.579L17.242,9.261H9.193c-1.381,0-2.5,1.119-2.5,2.5s1.119,2.5,2.5,2.5h4.493l10.337,29.743H53.4
+                                    c1.381,0,2.5-1.119,2.5-2.5S54.781,39.004,53.4,39.004z"></path>
+                            </svg>
+                            <span class="ml-2 roboto-medium">Añadir a la cesta</span>
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="ubicacion" class="bannermapa">
+        <div class="container-fluid text-center">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.25862206184!2d-84.24352302561248!3d9.912405474537145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0ff10e1af8289%3A0x44ebf7455dc0b20d!2sPlaza%20Colon%2C%20San%20Jos%C3%A9%2C%20Cd%20Col%C3%B3n%2C%2010701!5e0!3m2!1ses!2scr!4v1718337209256!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="contacto" class="banner6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Columna izquierda con logo y redes sociales -->
+                    <div class="logo-redes text-center">
+                        <img src="imagenes/aseducativa.png" alt="Logo" class="img-fluid mb-3 d-inline-block">
+                        <div class="redes-sociales">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="Instagram" width="25" height="25" class="d-inline-block">
+                                <path fill-rule="evenodd" d="M5.87.123C4.242.196 2.83.594 1.691 1.729.548 2.869.155 4.286.081 5.897.036 6.902-.232 14.498.544 16.49a5.04 5.04 0 0 0 2.91 2.903c.634.246 1.356.412 2.416.461 8.86.401 12.145.183 13.53-3.364.246-.631.415-1.353.462-2.41.405-8.883-.066-10.809-1.61-12.351C17.027.507 15.586-.325 5.87.123m.081 17.944c-.97-.043-1.496-.205-1.848-.341a3.255 3.255 0 0 1-1.888-1.883c-.591-1.514-.395-8.703-.342-9.866.051-1.14.282-2.18 1.086-2.985.995-.992 2.28-1.479 11.034-1.084 1.142.052 2.186.282 2.992 1.084.995.993 1.489 2.288 1.087 11.008-.044.968-.206 1.493-.342 1.843-.901 2.308-2.973 2.628-11.779 2.224M14.09 4.69c0 .657.534 1.19 1.194 1.19.66 0 1.195-.533 1.195-1.19a1.195 1.195 0 0 0-2.39 0M4.863 9.988a5.103 5.103 0 0 0 5.11 5.097 5.103 5.103 0 0 0 5.109-5.097 5.102 5.102 0 0 0-5.11-5.096 5.102 5.102 0 0 0-5.11 5.096m1.794 0A3.313 3.313 0 0 1 9.972 6.68a3.313 3.313 0 0 1 3.317 3.308 3.313 3.313 0 0 1-3.317 3.31 3.313 3.313 0 0 1-3.316-3.31" fill="#fafdff" class="color000000 svgShape"></path>
+                            </svg>
+                                                                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 20" id="Facebook" width="25" height="25" class="d-inline-block">
+                                <path fill-rule="evenodd" d="M6.821 20v-9h2.733L10 7H6.821V5.052C6.821 4.022 6.848 3 8.287 3h1.458V.14c0-.043-1.253-.14-2.52-.14C4.58 0 2.923 1.657 2.923 4.7V7H0v4h2.923v9h3.898z" fill="#fafdff" class="color000000 svgShape"></path>
+                            </svg>
+                        </div>                        
+                    </div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <!-- Columna derecha con información de contacto -->
+                    <div class="contacto">
+                        <h2 class="roboto-bold mb-3 text-white">Contáctenos</h2>
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid tamanoimg" src="imagenes/telefono1.png" alt="Teléfono">
+                            <p class="text-white">+506 6443 9488</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <img class="img-fluid tamanoimg2" src="imagenes/email.png" alt="Correo">
+                            <p class="text-white">aseducativa@aseducativa.com</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid tamanoimg" src="imagenes/internet.png" alt="Internet">
+                            <p class="text-white">www.aseducativa.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a id="scrollTopBtn" href="#inicio" title="Ir al inicio">
+        <img src="imagenes/flecha.png" class="img-fluid" alt="Flecha para ir arriba">
+    </a>
+    
+
+    <footer class="footer">
+        <div class="container text-center py-3 roboto-medium">
+            <p class="mb-0">© 2022 INSTITUTO DE ENSEÑANZA Y CONSULTORÍA INFORMÁTICA ASEDUCA SRL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+<script>
+    // Inicializar smooth-scroll
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true
+    });
+
+    // Mostrar/ocultar el botón al hacer scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 280) {
+            $('#scrollTopBtn').fadeIn();
+        } else {
+            $('#scrollTopBtn').fadeOut();
+        }
+    });
+
+    // Desplazamiento suave al hacer clic en el botón
+    $('#scrollTopBtn').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 800);
+    });
+</script>
+    
+</body>
+</html>
