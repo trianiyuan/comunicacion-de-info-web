@@ -1,0 +1,88 @@
+.first_col {
+    background-color: white;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    width: 550px;
+    left: 55px;
+    top: 171px;
+    border-radius: 20px;
+    z-index: 1; /* Asegura que esté por encima de la imagen */
+}
+
+.img-fluid {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row-last {
+    width:70% !important;
+    position: relative !important;
+    left: 350px;
+    top: 50px;
+    height: 200px;
+    padding-bottom: 100px !important;
+    background-color: #720404;
+    border-radius: 20px;
+    z-index: 2; /* Asegura que esté encima de la imagen */
+}
+
+.btn-primary {
+    background-color: #ac110c;
+    border-color: #ac110c;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #7e2105;
+    border-color: #7e2105;
+    transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+}
+
+.form-control {
+    height: 52px;
+    background: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #7a0707;
+}
+
+.form-control[type=text]:focus {
+    border: 2px solid #583232;
+}
+
+.social-link {
+    color: white !important; /* Color blanco para el texto */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+.social-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+@media only screen and (max-width: 600px) {
+    .first_col {
+        position: initial;
+        left: 0 !important;
+        margin-top: 30px; /* Ajuste de margen para dispositivos móviles */
+    }
+
+    .sec_col {
+        order: 1 !important;
+    }
+
+    .row-last {
+        left: 0 !important;
+        width: 100% !important;
+        height: 500px !important;
+        top: 0 !important;
+        margin-top: 30px; /* Ajuste de margen para dispositivos móviles */
+    }
+}

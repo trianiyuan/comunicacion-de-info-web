@@ -1,0 +1,262 @@
+/* Estilos personalizados */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    background: linear-gradient(135deg, #1b1102, hwb(7 0% 47%));
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 400px; /* Define el ancho máximo de la imagen */
+    height: 500px; /* Permite que la altura se ajuste proporcionalmente al ancho */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .logo {
+        width: 100px; /* Ancho del logo para pantallas más pequeñas */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .logo {
+        width: 00px; /* Ancho del logo para pantallas medianas */
+    }
+}
+
+@media (min-width: 993px) {
+    .logo {
+        width: 250px; /* Ancho del logo para pantallas grandes */
+    }
+}
+
+
+header h1, footer p {
+    margin: 0;
+    font-size: 2em;
+}
+
+.audio {
+    background: linear-gradient(to top, #9e0303, #000000);
+    padding: 50px 0; /* Espacio alrededor del reproductor */
+}
+
+.player {
+    width: 350px;
+    background-color: hsla(0, 0%, 100%, 0);
+    border-radius: 20px;
+    box-shadow: 0 50px 80px rgba(7, 0, 0, 0.5);
+    overflow: hidden; /* Para recortar las sombras fuera del contenedor */
+    margin: 0 auto; /* Centra el reproductor horizontalmente */
+}
+
+.player .imgbox {
+    padding-top: 20px;
+    position: relative;
+    height: 450px;
+    overflow: hidden; /* Recorta la imagen dentro del contenedor */
+}
+
+.player .imgbox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.player audio {
+    width: 100%;
+    outline: none;
+    display: block; /* Asegura que el audio esté en una línea separada */
+    padding-top: 20px;
+    margin-top: 3px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background-image: url('imagenes/circo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Oculta el desbordamiento */
+    color: white;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.712);
+    text-align: center;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658); /* Color de fondo oscuro con opacidad */
+    z-index: 1; /* Coloca el fondo oscuro encima de la imagen */
+}
+
+.banner h2 {
+    font-size: 5rem;
+    z-index: 2; /* Asegura que el texto esté por encima del fondo oscuro */
+    position: relative;
+}
+
+.lottie-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Asegura que el iframe esté por encima del box-shadow y del texto */
+}
+
+.lottie-container iframe {
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+/* Estilos generales */
+.banner2 {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporción 16:9 para el video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.02); /* Efecto de escala al hacer hover */
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ff4b1e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #810707;
+}
+
+
+/* Estilos para el chat de WhatsApp */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    left: 40px; /* Cambiado a la izquierda */
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+.whatsapp_float:hover {
+    background-color: #064611;
+    color: white;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+#scrollTopBtn {
+    background-color: #9c2525c7; /* Color de fondo con transparencia */
+    color: white; /* Color del texto */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    text-align: center;
+    line-height: 50px; /* Alinea verticalmente el contenido */
+}
+#scrollTopBtn img {
+    width: 30px; /* Tamaño del icono de la flecha */
+    height: auto;
+    display: block; /* Asegura que la imagen esté centrada */
+    margin: auto; /* Centra la imagen horizontalmente */
+    margin-top: 5px; /* Ajusta el margen superior según sea necesario */
+}
+
+footer {
+    clip-path: polygon(0% 0%, 26.8% 20.31%, 50.42% 0%, 75.37% 20.31%, 99.5% 0%, 100% 97.57%, 0% 97.57%);
+    background-color: #000000;    background: linear-gradient(135deg, #581200, #fa2b0f);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+    margin: 0 auto; /* Centra el footer horizontalmente */
+}
