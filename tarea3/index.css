@@ -39,6 +39,13 @@ header{
     }
 }
 
+@media (max-width: 768px) {
+    .promo-images {
+        flex-direction: column; /* Apila las imágenes una sobre otra */
+        align-items: center;
+    }
+}
+
 
 header h1, footer p {
     margin: 0;
