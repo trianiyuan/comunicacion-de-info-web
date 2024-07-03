@@ -45,16 +45,67 @@ header h1, footer p {
     font-size: 2em;
 }
 
+.promo-section {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+.promo-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.promo-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.promo-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #f00;
+}
+.promo-button {
+    background-color: #f00;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+.promo-button:hover {
+    background-color: #c00;
+}
+.promo-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.promo-images img {
+    max-width: 200px;
+    margin: 0 10px;
+}
+
+.promo-images img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.wow {
+    visibility: hidden;
+}
+
 .audio {
     background: linear-gradient(to top, #9e0303, #000000);
     padding: 50px 0; /* Espacio alrededor del reproductor */
+    padding-bottom: 25px;
 }
 
 .player {
     width: 350px;
     background-color: hsla(0, 0%, 100%, 0);
     border-radius: 20px;
-    box-shadow: 0 50px 80px rgba(7, 0, 0, 0.5);
+    box-shadow: 0 0px 80px rgba(7, 0, 0, 0.5);
     overflow: hidden; /* Para recortar las sombras fuera del contenedor */
     margin: 0 auto; /* Centra el reproductor horizontalmente */
 }
@@ -141,8 +192,9 @@ body {
 
 /* Estilos generales */
 .banner2 {
-    margin-bottom: 30px;
     padding: 30px;
+    background: linear-gradient(to top, #c97070, #9e0303);
+
 }
 
 .video-container {
@@ -181,6 +233,10 @@ iframe:hover {
     transition: border-color 0.3s ease-in-out;
 }
 
+.banner3{
+    background: linear-gradient(to top, #ffffff, #c97070);
+
+}
 
 #scrollTopBtn {
     position: fixed;
