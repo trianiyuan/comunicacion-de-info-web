@@ -1,0 +1,226 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    margin-bottom: 20px;
+}
+
+.hero {
+    background: url('path/to/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.subscribe, .contact {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+input[type="email"], textarea {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Animaciones */
+@keyframes titleAnimation {
+    0% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(-10px); }
+}
+
+.title-animate {
+    animation: titleAnimation 2s forwards; /* Animación se ejecuta solo una vez */
+}
+
+
+/* Navbar styles ------------------------------------------------------------------------------------------- */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand img.navbar-logo {
+    height: 70px; /* Ajusta el tamaño del logo */
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 0.5rem; /* Espacio para el subrayado */
+    color: #ffffff; /* Color de texto de los enlaces en el navbar */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Transiciones para color y subrayado */
+}
+
+/* Subrayado con border-bottom */
+.navbar-nav .nav-link {
+    border-bottom: 2px solid transparent; /* Subrayado transparente inicialmente */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d3d3d3; /* Color del texto en hover */
+    border-bottom: 2px solid #d3d3d3; /* Color del subrayado en hover */
+}
+
+/* Navbar background color */
+.navbar-dark.bg-primary {
+    background-color: #031a33 !important; /* Cambia este color según tu preferencia */
+}
+
+/*-------------------dropdown---------------*/
+/* Estilo para el menú desplegable */
+.dropdown-menu {
+    background-color: #b4b4b4ab; /* Color de fondo */
+    border: 1px solid #dee2e6; /* Borde del menú */
+    border-radius: 0.25rem; /* Radio de borde */
+    display: none; /* Ocultar el menú por defecto */
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block; /* Mostrar el menú al hacer hover en el ítem */
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    color: #212529; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef; /* Color de fondo en hover */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+
+
+
+
+
+/* Footer styles ------------------------------------------------------------------------------------------------*/
+
+.footer-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+}
+
+.footer-info{
+    font-size: 0.8rem;
+}
+
+.footer-divider {
+    border-top: 1px solid #d3d3d3; /* Línea gris debajo del título */
+    margin-bottom: 0.rem;
+}
+
+.contact-info {
+    font-size: 0.8rem;
+}
+
+.contact-info i {
+    margin-right: 0.2rem;
+}
+
+ul.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul.list-unstyled li {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para los enlaces en el footer */
+.footer-link,
+.contact-link {
+    color: inherit; /* Hereda el color del texto del contenedor */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.footer-link:hover,
+.contact-link:hover {
+    text-decoration: underline; /* Añade subrayado al pasar el cursor */
+}
+
+.footer-title a {
+    color: inherit; /* Hereda el color del elemento padre (en este caso, el color del texto del footer) */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+/* Estilo para los enlaces en los títulos del footer-------------------------------------------------------------- */
+.footer-title a {
+    position: relative; /* Necesario para el posicionamiento absoluto del subrayado */
+    color: inherit; /* Hereda el color del texto del contenedor */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.footer-title a::after {
+    content: ""; /* Necesario para el pseudo-elemento */
+    position: absolute;
+    left: 0;
+    bottom: -6px; /* Ajusta esta propiedad para mover el subrayado más abajo del texto */
+    width: 100%;
+    height: 1px; /* Altura del subrayado */
+    background-color: transparent; /* Inicialmente invisible */
+    transition: background-color 0.3s ease; /* Transición suave para el color */
+}
+
+.footer-title a:hover::after {
+    background-color: #d3d3d3; /* Color del subrayado al pasar el cursor */
+}
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-divider {
+        margin: 0 auto 0.5rem;
+        width: 50%; /* Ajusta el ancho de la línea en pantallas pequeñas */
+    }
+}
+
+/* Ajusta el espaciado entre columnas en pantallas más grandes */
+@media (min-width: 768px) {
+    .col-md-3 {
+        padding-left: 1rem; /* Espaciado izquierdo */
+        padding-right: 1rem; /* Espaciado derecho */
+    }
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .col-6 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
