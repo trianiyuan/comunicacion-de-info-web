@@ -18,3 +18,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var myCarousel = document.querySelector('#testimonialCarousel');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 4000, // Intervalo en milisegundos (5 segundos)
+            ride: 'carousel', // Inicia el carrusel automáticamente
+            wrap: true // Hace que el carrusel vuelva al principio al llegar al final
+        });
+    });
+

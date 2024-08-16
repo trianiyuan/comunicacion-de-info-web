@@ -29,10 +29,12 @@ h1, h2 {
 }
 
 h1 {
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 2.5rem;
 }
 
 h2 {
+    font-family: 'Didact Gothic', sans-serif;
     font-size: 2rem;
 }
 
@@ -55,18 +57,41 @@ input[type="email"], textarea {
 
 /* Navbar styles ------------------------------------------------------------------------------------------- */
 .navbar {
-    padding: 1rem;
+    padding: 0.1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #031a33 !important; /* Mantiene el color de fondo que tenías */
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3); /* Agrega sombra a la barra de navegación */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+/* Centrar el logo y el contenido de la barra de navegación */
+.navbar-brand {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el logo */
+    align-items: center;
+    flex: 1;
 }
 
 .navbar-brand img.navbar-logo {
-    height: 70px; /* Ajusta el tamaño del logo */
+    height:70px; /* Ajusta el tamaño del logo */
+}
+
+/* Centrar los enlaces de navegación */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los enlaces */
+    flex: 1;
 }
 
 .navbar-nav .nav-link {
     position: relative;
     font-weight: 500;
     padding-bottom: 0.5rem; /* Espacio para el subrayado */
-    color: #ffffff; /* Color de texto de los enlaces en el navbar */
+    color: #ffffff; /* Color de texto de los enlaces en la barra de navegación */
     text-decoration: none; /* Elimina el subrayado predeterminado */
     transition: color 0.3s ease, border-bottom 0.3s ease; /* Transiciones para color y subrayado */
 }
@@ -76,56 +101,91 @@ input[type="email"], textarea {
     border-bottom: 2px solid transparent; /* Subrayado transparente inicialmente */
 }
 
+/* Estilo para el estado hover de los enlaces */
 .navbar-nav .nav-link:hover {
     color: #d3d3d3; /* Color del texto en hover */
     border-bottom: 2px solid #d3d3d3; /* Color del subrayado en hover */
 }
 
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: block; /* Cambia el display a block en pantallas pequeñas */
+        text-align: center; /* Centra el texto de los enlaces */
+    }
+
+    .navbar-brand {
+        flex: none; /* Permite que el logo no se expanda */
+    }
+
+    .navbar-toggler {
+        border: none; /* Quita el borde del botón de menú en dispositivos móviles */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.2rem 0; /* Ajusta el padding de los enlaces para pantallas pequeñas */
+    }
+
+    .navbar-collapse {
+        margin-top: 0rem; /* Agrega un margen superior para el contenido del menú colapsado */
+    }
+}
+
 /* Navbar background color */
 .navbar-dark.bg-primary {
-    background-color: #031a33 !important; /* Cambia este color según tu preferencia */
+    background-color: #031a33 !important; /* Color de fondo de la barra de navegación */
 }
 
-/*-------------------dropdown---------------*/
-/* Estilo para el menú desplegable */
+/* Color de los enlaces de navegación */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Color de texto de los enlaces en la barra de navegación */
+}
+
+
+
+/*-------------------dropdown--------------------------------------------*/
 .dropdown-menu {
-    background-color: #b4b4b4ab; /* Color de fondo */
-    border: 1px solid #dee2e6; /* Borde del menú */
-    border-radius: 0.25rem; /* Radio de borde */
+    background-color: #031a33; /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
     display: none; /* Ocultar el menú por defecto */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.2s ease, transform 0.2s ease; /* Transición suave para aparición */
+    transform: translateY(10px); /* Desplazamiento hacia abajo */
 }
 
+/* Mostrar el menú al hacer hover en el ítem */
 .nav-item:hover .dropdown-menu {
-    display: block; /* Mostrar el menú al hacer hover en el ítem */
+    display: block;
+    opacity: 1; /* Hacer visible el menú */
+    transform: translateY(0); /* Restablecer el desplazamiento */
 }
 
+/* Estilo de los ítems del menú */
 .dropdown-item {
-    padding: 0.5rem 1rem; /* Espaciado interno */
-    color: #212529; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
+    padding: 0.75rem 1rem; /* Espaciado interno ajustado */
+    color: #ffffff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado predeterminado */
+    position: relative; /* Necesario para el efecto de hover */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves para color y fondo */
 }
 
+/* Estilo de los ítems del menú al hacer hover */
 .dropdown-item:hover {
-    background-color: #e9ecef; /* Color de fondo en hover */
-    text-decoration: none; /* Sin subrayado */
+    color: #ffffff !important; /* Color del texto en hover */
+    background-color: #031a33 !important; /* Fondo de los ítems en hover */
 }
-
-
-
-
 
 
 
 /* Footer styles ------------------------------------------------------------------------------------------------*/
 
 .footer-title {
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1rem;
     margin-bottom: 0.1rem;
 }
 
 .footer-info{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .footer-divider {
@@ -134,11 +194,11 @@ input[type="email"], textarea {
 }
 
 .contact-info {
-    font-size: 0.8rem;
+    font-size: 0.87rem;
 }
 
 .contact-info i {
-    margin-right: 0.2rem;
+    margin-right: 0.1rem;
 }
 
 ul.list-unstyled {
@@ -147,8 +207,12 @@ ul.list-unstyled {
 }
 
 ul.list-unstyled li {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin-bottom: 0.5rem;
+}
+
+.copycolor {
+    background-color: #c0c0c071;
 }
 
 /* Estilo para los enlaces en el footer */
@@ -166,6 +230,8 @@ ul.list-unstyled li {
 .footer-title a {
     color: inherit; /* Hereda el color del elemento padre (en este caso, el color del texto del footer) */
     text-decoration: none; /* Elimina el subrayado predeterminado */
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* Estilo para los enlaces en los títulos del footer-------------------------------------------------------------- */

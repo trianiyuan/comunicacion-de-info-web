@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Agata Blue Medical Clinic</title>
+    <link rel="icon" href="imagenes/logo.PNG" type="imagen">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <a class="navbar-brand" href="index.html">
                 <img src="imagenes/logo.PNG" alt="Agata Blue Medical Clinic" class="navbar-logo">
             </a>
@@ -24,13 +28,14 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- Enlace a la página de servicios -->
+                        <a class="nav-link" href="servicios.html">
                             Servicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#no-invasivos">Servicios No Invasivos</a></li>
-                            <li><a class="dropdown-item" href="#skin-care">Cuidado de la Piel</a></li>
-                            <li><a class="dropdown-item" href="#laser">Servicios Láser</a></li>
+                            <li><a class="dropdown-item" href="noinvasivos.html">Servicios No Invasivos</a></li>
+                            <li><a class="dropdown-item" href="cuidadopiel.html">Cuidado de la Piel</a></li>
+                            <li><a class="dropdown-item" href="laser.html">Servicios Láser</a></li>
                         </ul>
                     </li>                    
                     
@@ -44,23 +49,209 @@
     
 
     <main>
-        <section class="hero text-center">
-            <h1 class="title-animate">Bienvenidos a Agata Blue Medical Clinic</h1>
-            <p class="lead">Su salud es nuestra prioridad</p>
+        <section class="background-section">
+        <p class="top-text">AGATA BLUE MEDICAL CLINIC</p>
+        <div class="overlay">
+            <div class="content">
+                <h2 class="main-title">Lo mejor para tu piel</h2>
+                <p class="sub-title">Con resultados que duran</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h1 class="section-title">¿Por qué escogernos?</h1>
+        <p class="description">Descubre nuestros pilares</p>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="icon">
+                        <i class="fas fa-user-md fa-3x"></i> <!-- Usa Font Awesome para íconos -->
+                    </div>
+                    <h3>Expertise Profesional</h3>
+                    <p>La Dra. Priscilla Gonzáles, con años de formación y experiencia en medicina estética, combina su conocimiento profundo con un enfoque personalizado para cada paciente.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="icon">
+                        <i class="fas fa-laptop-medical fa-3x"></i>
+                    </div>
+                    <h3>Tratamientos Avanzados</h3>
+                    <p>Utilizamos tecnología de vanguardia y técnicas innovadoras para asegurar resultados efectivos y naturales que realzan tu belleza sin comprometer tu bienestar.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="icon">
+                        <i class="fas fa-spa fa-3x"></i>
+                    </div>
+                    <h3>Enfoque Integral</h3>
+                    <p>Nos enfocamos en la salud integral de tu piel, promoviendo no solo una apariencia rejuvenecida, sino también un bienestar general que te hará sentir renovado.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="icon">
+                        <i class="fas fa-user-check fa-3x"></i>
+                    </div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Cada tratamiento está diseñado a medida, considerando tus necesidades y objetivos individuales para ofrecerte una experiencia única y resultados óptimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2 class="section-title">Nuestros Testimonios</h2>
+        <p class="description">Los pacientes han hablado</p>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-comment">Excelente servicio y atención. Recomiendo ampliamente.</p>
+                            <p class="testimonial-name">Juan Pérez</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-comment">Gran experiencia, muy profesional y amable.</p>
+                            <p class="testimonial-name">María López</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-comment">Un servicio increíble. Muy satisfecho con los resultados.</p>
+                            <p class="testimonial-name">Pedro Gómez</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-comment">Excelente atención y resultados muy satisfactorios.</p>
+                            <p class="testimonial-name">Ana Rodríguez</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-comment">Muy buena atención, con un enfoque personalizado.</p>
+                            <p class="testimonial-name">Luis Fernández</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-comment">Recomiendo este lugar sin duda. Un gran equipo.</p>
+                            <p class="testimonial-name">Claudia Martínez</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Añade más .carousel-item aquí si es necesario -->
+            </div>
+            <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+    
+    
+    
+    
+        
+        <section class="subscribe-grid pb-5">
+            <div class="subscribe-content">
+                <h2>Suscríbase a nuestro boletín</h2>
+                <p>¡No te pierdas ninguna de nuestras promociones!</p>
+                <form id="subscribe-form">
+                    <input type="email" id="email" class="form-control" placeholder="Introduce tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+            <div class="subscribe-images">
+                <div class="image-container">
+                    <img src="imagenes/index1.jpg" alt="Imagen 1" class="image-top">
+                    <img src="imagenes/index2.jpg" alt="Imagen 2" class="image-bottom">
+                </div>
+            </div>
         </section>
 
-        <section class="subscribe text-center">
-            <h2>Suscríbase a nuestro boletín</h2>
-            <form id="subscribe-form">
-                <input type="email" id="email" class="form-control" placeholder="Introduce tu correo electrónico" required>
-                <button type="submit" class="btn btn-primary">Suscribirse</button>
-            </form>
+        <section class="blog text-center pb-5">
+            <h1 class="section-title text-white">Blog</h1>
+            <p class="description text-white">Descubre nuestros pilares</p>
+            <div class="container">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="blog-card">
+                            <img src="imagenes/blog1.jpg" class="card-img-top" alt="Blog Post 1">
+                            <div class="card-body">
+                                <h3 class="card-title pt-3 pb-1">Beneficios del Botox</h3>
+                                <p class="card-subtitle pb-3">Todo lo que necesitas saber del Botox para rejuvenecer tu piel. Descubre cómo este tratamiento puede ayudarte a suavizar las arrugas, mejorar la elasticidad de tu piel y más.</p>
+                                <a href="https://www.npunto.es/content/src/pdf-articulo/62e117fc458dbart2.pdf" class="btn btn-custom">Revisar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="blog-card">
+                            <img src="imagenes/blog2.jpg" class="card-img-top" alt="Blog Post 2">
+                            <div class="card-body">
+                                <h3 class="card-title pt-3 pb-1">Tratamientos para el Acné</h3>
+                                <p class="card-subtitle pb-3">Soluciones modernas y efectivas para combatir el acné y mejorar tu piel. Explora los tratamientos avanzados que no solo eliminan las imperfecciones, sino que también promueven una piel más clara.</p>
+                                <a href="https://aedv.es/wp-content/uploads/2021/05/Gui%CC%81a-pacientes-con-acne.pdf" class="btn btn-custom">Revisar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="blog-card">
+                            <img src="imagenes/blog3.jpg" class="card-img-top" alt="Blog Post 3">
+                            <div class="card-body">
+                                <h3 class="card-title pt-2 pb-3">Rejuvenecimiento Facial: Opciones y Beneficios</h3>
+                                <p class="card-subtitle pb-2">Explora diferentes métodos para lograr un aspecto más joven y fresco con un procedimiento mínimamente invasivo e indoloro. </p>
+                                <a href="https://www.seme.org/site/docs/revistaweb/Revista-SEME-80_2-Gomez-2024.pdf" class="btn btn-custom">Revisar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <section class="blog text-center">
-            <h2>Blog</h2>
-            <p>Aquí se mostrarán artículos y noticias sobre salud.</p>
-        </section>
+        
+        
     </main>
 
     <footer class="bg-light text-dark py-4">
@@ -93,6 +284,8 @@
                         <li><a href="#toxina" class="footer-link">Toxina Botulínica (Nabota, Xeomin, Botox)</a></li>
                         <li><a href="#mesoterapia" class="footer-link">Mesoterapia Facial (Microagujas o Nanoagujas)</a></li>
                         <li><a href="#tricologia" class="footer-link">Tricología (Mesoterapia capilar y patologías del cabello)</a></li>
+                        <li><a href="#tricologia" class="footer-link">Radiofrecuencia Binary Premium</a></li>
+                        <li><a href="#tricologia" class="footer-link">Hilos Tensores</a></li>
                     </ul>
                 </div>
     
@@ -106,6 +299,7 @@
                         <li><a href="#hollywood-peel" class="footer-link">Hollywood Peel</a></li>
                         <li><a href="#peelings" class="footer-link">Peelings Químicos</a></li>
                         <li><a href="#mesoterapia" class="footer-link">Mesoterapia Facial (Microagujas o Nanoagujas)</a></li>
+                        <li><a href="#mesoterapia" class="footer-link">Dermatología Clínica (Acné, hongos y alergias)</a></li>
                     </ul>
                 </div>
     
@@ -151,8 +345,11 @@
                 </div>
             </div>
         </div>
+        
     </footer>
-    
+    <section class="text-center copycolor pt-3 pb-2">
+        <p>&copy; 2024 Agata Blue Medical Clinic</p>
+    </section>
     
     
 
@@ -160,7 +357,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <script src="js/scripts.js"></script>
 </body>
 </html>

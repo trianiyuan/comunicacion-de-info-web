@@ -1,0 +1,577 @@
+.background-section {
+    background-image: url(../imagenes/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.363);
+    position: relative;   
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 6rem;
+}
+
+.top-text {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0;
+    z-index: 1;
+    color: #a7a7a7;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.content {
+    z-index: 1;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: #cccccc;
+}
+
+/*-------------------------------------------------------------------------------*/
+/* Estilos para la sección "¿Por qué escogernos?" */
+.why-choose-us {
+    padding: 4rem 0; /* Espaciado superior e inferior para la sección */
+    background-color: #ffffff; /* Fondo claro para contrastar con la navbar */
+}
+
+.description{
+    margin-left: 5rem; /* Margen izquierdo para el título */
+    font-size: 2rem !important;
+    color: #031a33; /* Color del título */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 2rem;     
+}
+
+
+.section-title {
+    margin-left: 5rem; /* Margen izquierdo para el título */
+    font-size: 6rem;
+    font-weight: bold;
+    color: #031a33; /* Color del título */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+}
+
+/* Consulta de medios para pantallas de 768px o menores (tabletas y móviles) */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+        margin-left: 2rem; /* Menor margen izquierdo en pantallas pequeñas */
+    }
+}
+
+/* Consulta de medios para pantallas de 576px o menores (móviles) */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem; /* Tamaño de fuente aún más pequeño en pantallas muy pequeñas */
+        margin-left: 1rem; /* Aún menor margen izquierdo en pantallas muy pequeñas */
+    }
+}
+
+
+/* Estilo para los íconos en la rejilla */
+.icon {
+    margin-bottom: 1rem; /* Espacio debajo del ícono */
+}
+
+.icon i {
+    color: #031a33; /* Color del ícono */
+}
+
+/* Estilo para los títulos y descripciones dentro de las columnas */
+.why-choose-us h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #031a33;
+    margin-bottom: 0.5rem; /* Espacio debajo del título de la columna */
+}
+
+.why-choose-us p {
+    font-size: 1rem;
+    color: #333; /* Color del texto */
+}
+
+/* Efectos de hover */
+.col-md-3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para los efectos */
+}
+
+.col-md-3:hover {
+    transform: scale(1.05); /* Zoom ligero */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+/*-----------------------------------------------------------------------------*/
+.testimonials-section {
+    padding: 4rem 0; /* Espaciado superior e inferior para la sección */
+    background-color: #f9f9f9; /* Fondo claro para la sección */
+}
+
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que las tarjetas se muevan a la siguiente fila */
+    justify-content: center;
+    gap: 1rem; /* Espacio entre las tarjetas */
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* Ancho máximo de las tarjetas */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
+/* Estilo de las estrellas de calificación */
+.rating i {
+    color: #f39c12; /* Color de las estrellas */
+}
+
+/* Estilo del comentario */
+.testimonial-comment {
+    font-size: 1rem;
+    color: #333; /* Color del texto */
+    margin: 1rem 0; /* Espacio arriba y abajo del comentario */
+}
+
+/* Estilo de la firma */
+.testimonial-name {
+    font-style: italic; /* Estilo cursivo para la firma */
+    color: #666; /* Color del texto de la firma */
+}
+
+/* Estilos para controles del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); /* Cambia el color de los íconos para que se adapten al fondo */
+}
+
+/* Consultas de medios para mantener el tamaño de las tarjetas en pantallas pequeñas */
+@media (max-width: 992px) {
+    .carousel-item {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del carrusel en pantallas más pequeñas */
+        align-items: center; /* Centra los items verticalmente */
+    }
+
+    .d-flex {
+        flex-direction: column; /* Cambia la dirección del flex para que las tarjetas estén en columna */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+        gap: 1rem; /* Ajusta el espacio entre tarjetas */
+    }
+
+    .testimonial-card {
+        max-width: 90%; /* Ajusta el ancho máximo de las tarjetas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-card {
+        max-width: 100%; /* Asegura que las tarjetas no sean más anchas que el contenedor en pantallas muy pequeñas */
+        padding: 1rem; /* Ajusta el padding para pantallas muy pequeñas */
+    }
+}
+
+
+
+/* Configuración de la rejilla -----------------------------------------------*/
+.subscribe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 2rem; /* Espacio entre columnas */
+    align-items: center; /* Centra verticalmente los elementos en cada celda */
+    max-width: 1200px; /* Ancho máximo para mantener el diseño cohesionado */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+}
+
+/* Estilos generales para la sección de suscripción */
+.subscribe-content {
+    background-color: #f8f9fa; /* Color de fondo suave */
+    padding: 2rem 1.5rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 1rem 0; /* Margen para separación */
+    max-width: 30rem; /* Ancho máximo para mantener el contenido centrado */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo del encabezado */
+.subscribe-content h2 {
+    font-family: 'Montserrat', sans-serif; /* Fuente elegante */
+    color: #333; /* Color de texto oscuro */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: 600; /* Grosor del texto */
+    margin-bottom: 1rem; /* Espacio debajo del encabezado */
+}
+
+/* Estilo del párrafo */
+.subscribe-content p {
+    color: #666; /* Color de texto más claro */
+    margin-bottom: 1.5rem; /* Espacio debajo del párrafo */
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Estilo del formulario */
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo del campo de entrada */
+#email {
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    max-width: 400px; /* Ancho máximo del campo de entrada */
+    padding: 0.75rem 1rem; /* Espaciado interno */
+    border: 1px solid #ced4da ; /* Borde suave */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    margin-bottom: 1rem; /* Espacio debajo del campo de entrada */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Estilo del campo de entrada al enfocar */
+#email:focus {
+    border-color: #969696; /* Color del borde al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(117, 117, 117, 0.25); /* Sombra al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #888888c0 !important; /* Color de fondo */
+    border-color: #c7c7c78a !important; /* Color del borde */
+    color: #fff; /* Color del texto */
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilo del botón al pasar el cursor */
+.btn-primary:hover {
+    background-color: #b9b9b9c0; /* Color de fondo al pasar el cursor */
+    border-color: #c0c0c071; /* Color del borde al pasar el cursor */
+}
+
+/* Estilo del botón al estar activo */
+.btn-primary:active {
+    background-color: #888888c0 !important; /* Color de fondo al hacer clic */
+    border-color: #c7c7c78a !important; /* Color del borde al hacer clic */
+}
+
+/* Estilos para las imágenes */
+.subscribe-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Espacio entre las imágenes */
+}
+
+/* Estilos para las imágenes en la rejilla ---------------------------------------------------------*/
+.subscribe-images {
+    display: flex;
+    justify-content: center; /* Centra el contenedor de imágenes */
+}
+
+/* Contenedor principal */
+.subscribe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales en pantallas grandes */
+    gap: 2rem; /* Espacio entre columnas */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 2rem; /* Espacio superior */
+}
+
+/* Contenedor del contenido de suscripción */
+.subscribe-content {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado */
+.subscribe-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem; /* Espacio debajo del encabezado */
+}
+
+/* Estilo del formulario */
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo del campo de entrada */
+#email {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #888888c0;
+    border-color: #c7c7c78a;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+}
+
+/* Estilo del botón al pasar el cursor */
+.btn-primary:hover {
+    background-color: #b9b9b9c0;
+    border-color: #c0c0c071;
+}
+
+/* Contenedor de imágenes */
+.image-container {
+    position: relative; /* Necesario para la superposición de imágenes */
+    width: 100%;
+    max-width: 100%; /* Usa todo el ancho disponible en pantallas grandes */
+    height: 38rem; /* Altura fija para el contenedor */
+    overflow: hidden; /* Asegura que las imágenes no salgan del contenedor */
+}
+
+/* Estilo para la imagen superior */
+.image-top {
+    position: absolute; /* Posiciona la imagen superior de manera absoluta dentro del contenedor */
+    top: 20%; /* Ajusta la posición de la imagen superior desde la parte superior del contenedor */
+    left: 80%; /* Ajusta la posición de la imagen superior desde la izquierda del contenedor */
+    transform: translate(-50%, 0); /* Centra la imagen horizontalmente */
+    width: 50%; /* Ajusta el ancho de la imagen superior */
+    height: 90%; /* Ajusta la altura de la imagen superior */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor */
+    z-index: 1; /* Asegura que la imagen superior esté por encima */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Agrega una sombra elegante más pronunciada */
+    animation: slide-in-top 1s ease-out; /* Agrega la animación de entrada */
+    border-top-left-radius: 10rem;
+}
+
+/* Estilo para la imagen inferior */
+.image-bottom {
+    position: absolute; /* Posiciona la imagen inferior de manera absoluta dentro del contenedor */
+    bottom: 10%; /* Ajusta la posición de la imagen inferior desde la parte inferior del contenedor */
+    right: 30%; /* Ajusta la posición de la imagen inferior desde la derecha del contenedor */
+    width: 75%; /* Ajusta el ancho de la imagen inferior */
+    height:80%; /* Ajusta la altura de la imagen inferior */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor */
+    z-index: 0; /* Asegura que la imagen inferior esté debajo de la superior */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25); /* Agrega una sombra elegante más pronunciada */
+    animation: slide-in-bottom 1s ease-out; /* Agrega la animación de entrada */
+    border-top-right-radius: 15rem;
+}
+
+/* Animación de entrada para la imagen superior */
+@keyframes slide-in-top {
+    from {
+        transform: translate(-150%, 0); /* Inicia desde más a la izquierda fuera del contenedor */
+        opacity: 0; /* Inicia con la imagen invisible */
+    }
+    to {
+        transform: translate(-50%, 0); /* Termina en la posición final */
+        opacity: 1; /* Termina con la imagen visible */
+    }
+}
+
+/* Animación de entrada para la imagen inferior */
+@keyframes slide-in-bottom {
+    from {
+        transform: translate(150%, 0); /* Inicia desde más a la derecha fuera del contenedor */
+        opacity: 0; /* Inicia con la imagen invisible */
+    }
+    to {
+        transform: translate(0, 0); /* Termina en la posición final */
+        opacity: 1; /* Termina con la imagen visible */
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .subscribe-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .subscribe-images {
+        margin-top: -20rem; /* Espacio superior entre el contenido y las imágenes */
+    }
+
+    .image-wrapper {
+        display: flex;
+        flex-direction: column; /* Apila las imágenes verticalmente */
+        align-items: center; /* Centra las imágenes horizontalmente */
+    }
+
+    .image-container {
+        position: relative; /* Cambia la posición a relativa para que las imágenes se apilen verticalmente */
+        width: 100%;
+        height: auto; /* Ajusta la altura a automática para mantener la proporción en pantallas pequeñas */
+    }
+
+    .image-top {
+        position: static; /* Quita la posición absoluta para el diseño en una columna */
+        width: 45%; /* Ajusta el ancho a un valor que se vea bien en pantallas pequeñas */
+        right: 90%;
+        margin-left: 15rem;
+        height: auto; /* Altura automática para mantener la proporción */
+        margin-bottom: -6rem; /* Espacio entre las imágenes */
+    }
+
+    .image-bottom {
+        position: static; /* Quita la posición absoluta para el diseño en una columna */
+        width: 75%; /* Ajusta el ancho a un valor que se vea bien en pantallas pequeñas */
+        margin-right: 10rem;
+        height: auto; /* Altura automática para mantener la proporción */
+        margin-bottom: 1rem; /* Espacio entre las imágenes */
+    }
+
+    .image-top {
+        /* Ajusta el margen para posicionar la imagen superior según lo deseado */
+        margin-top:18rem; /* Ajusta este valor para el efecto de superposición deseado */
+    }
+}
+
+/*------------------------blog-----------------------*/
+.blog {
+    background-image: url(../imagenes/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.363);
+    height: 84vh;
+    color: #fff;
+    overflow: hidden;
+
+}
+
+/* Estilo para la sección de blog */
+.blog {
+    padding: 4rem 0; /* Espaciado superior e inferior */
+    background-color: #f9f9f9; /* Fondo claro para contraste */
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #031a33;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Estilo para las tarjetas de blog */
+.blog-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #000;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px); /* Efecto de levantamiento */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.btn-custom {
+    background-color: #b1afaf !important;
+    border-color: #b1afaf;
+    padding: 0.1rem 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.btn-custom:hover {
+    background-color: #c7c3bf !important;
+
+}
