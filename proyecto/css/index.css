@@ -282,7 +282,7 @@
 }
 
 /* Estilo del botón */
-.btn-primary {
+.btn-custom {
     background-color: #888888c0 !important; /* Color de fondo */
     border-color: #c7c7c78a !important; /* Color del borde */
     color: #fff; /* Color del texto */
@@ -293,13 +293,13 @@
 }
 
 /* Estilo del botón al pasar el cursor */
-.btn-primary:hover {
+.btn-custom:hover {
     background-color: #b9b9b9c0; /* Color de fondo al pasar el cursor */
     border-color: #c0c0c071; /* Color del borde al pasar el cursor */
 }
 
 /* Estilo del botón al estar activo */
-.btn-primary:active {
+.btn-custom:active {
     background-color: #888888c0 !important; /* Color de fondo al hacer clic */
     border-color: #c7c7c78a !important; /* Color del borde al hacer clic */
 }

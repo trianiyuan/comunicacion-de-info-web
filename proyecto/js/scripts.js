@@ -29,3 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', () => {
+            console.log('Redireccionando a la página correspondiente');
+        });
+    });
+

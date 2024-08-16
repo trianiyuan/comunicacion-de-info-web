@@ -28,15 +28,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-h1 {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 2.5rem;
-}
 
-h2 {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 2rem;
-}
 
 input[type="email"], textarea {
     max-width: 500px;
@@ -290,3 +282,94 @@ ul.list-unstyled li {
 }
 
 
+
+
+.service-section {
+    padding: 2rem 0; /* Espaciado superior e inferior para la sección */
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.service-image {
+    flex: 1; /* Permite que la imagen ocupe el espacio disponible */
+}
+
+.service-image img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 0.5rem; /* Bordes redondeados para la imagen */
+}
+
+.service-text {
+    font-family: 'Didact Gothic', sans-serif;
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    max-width: 500px; /* Limita el ancho del texto para evitar que sea demasiado ancho en pantallas grandes */
+}
+
+/* Importa la fuente Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.service-text h1 {
+    font-size: 4rem; /* Tamaño del título */
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.service-text p {
+    font-size: 1rem; /* Tamaño del texto */
+    font-family: 'Montserrat', sans-serif; /* Aplicar la fuente Montserrat */
+    margin-bottom: 1rem; /* Espacio debajo del párrafo */
+}
+
+
+.btn-custom {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff !important;
+    background-color: #888888c0 !important; /* Color del botón */
+    border-color: #c7c7c78a;
+    text-decoration: none; /* Sin subrayado en el botón */
+    border-radius: 0.5rem; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.btn-custom:hover {
+    background-color: #b9b9b9c0 !important; /* Color del botón al hacer hover */
+}
+
+
+/* Media queries para diseño responsive */
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    .service-image, .service-text {
+        width: 100%; /* Hace que la imagen y el texto ocupen el 100% del ancho disponible */
+    }
+
+    .service-text h1 {
+        font-size: 1.5rem; /* Tamaño del título en pantallas pequeñas */
+    }
+
+    .service-text p {
+        font-size: 0.875rem; /* Tamaño del texto en pantallas pequeñas */
+    }
+
+    .btn-primary {
+        font-size: 0.875rem; /* Tamaño del texto del botón en pantallas pequeñas */
+    }
+}
+
+.divider {
+    height: 1px; /* Altura de la línea */
+    margin-left: 30rem;
+    margin-right: 30rem;
+    background-color: #d6d6d6; /* Color de la línea */
+}

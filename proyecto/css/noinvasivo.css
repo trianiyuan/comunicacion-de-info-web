@@ -28,15 +28,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-h1 {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 2.5rem;
-}
 
-h2 {
-    font-family: 'Didact Gothic', sans-serif;
-    font-size: 2rem;
-}
 
 input[type="email"], textarea {
     max-width: 500px;
@@ -290,3 +282,132 @@ ul.list-unstyled li {
 }
 
 
+/*---------------------------------------------------------------------------------*/
+
+/* styles.css */
+.space{
+    margin-top: 8rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-section {
+    padding: 2rem 0;
+}
+
+/* styles.css */
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* En este caso no utilizamos la clase reverse */
+.service-content.reverse {
+    flex-direction: row-reverse; /* Alterna la dirección de la fila, con imagen a la derecha */
+}
+
+/* styles.css */
+
+.service-image {
+    flex: 1;
+    /* Asegura que la imagen ocupe el 100% del contenedor disponible */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la imagen */
+    position: relative; /* Necesario para aplicar el borde curvo correctamente */
+}
+
+/* Aplica el estilo al contenedor de la imagen */
+.service-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30rem; /* Bordes redondeados en las esquinas del lado derecho */
+    
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.service-image img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    border-radius: 25rem; /* Bordes redondeados en las esquinas del lado derecho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la parte de abajo de la imagen */
+}
+
+.service-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.service-text h1 {
+    font-size: 3rem;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.service-text p {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.btn-custom {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff !important;
+    background-color: #888888c0 !important; /* Color del botón */
+    border-color: #c7c7c78a;
+    text-decoration: none; /* Sin subrayado en el botón */
+    border-radius: 35rem !important; /* Bordes redondeados del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.btn-custom:hover {
+    background-color: #b9b9b9c0 !important; /* Color del botón al hacer hover */
+}
+.divider {
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 2rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-image, .service-text {
+        width: 100%;
+    }
+
+    .service-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .service-text p {
+        font-size: 0.875rem;
+    }
+
+    .btn-primary {
+        font-size: 0.875rem;
+    }
+}
+
+
+/*------------------video banner 1--------------*/
+
+.container-fluid{
+    padding: 150px;
+}
