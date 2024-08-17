@@ -522,3 +522,97 @@ h2.letra1 {
     border-radius: 8px;
     box-shadow: 04px8pxrgba(0, 0, 0, 0.2);
 }
+
+
+.faq-section {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Aumenta el margen inferior del título */
+    font-size: 2rem;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 900;
+}
+
+.faq-item {
+    border-bottom: 1px solid #b9b9b9;
+    margin-bottom: 20px; /* Aumenta el margen inferior entre cada FAQ item */
+    padding-bottom: 15px; /* Añade espacio interno en la parte inferior de cada item */
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding-right: 40px; /* Aumenta el espacio para la flecha */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.faq-question .arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; /* Transición suave para la flecha */
+}
+
+.faq-answer {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+    max-height: 0; /* Oculta las respuestas por defecto */
+    overflow: hidden; /* Evita que el contenido desborde */
+    transition: max-height 1s ease-out, opacity 0.5s ease-out; /* Transición más lenta para la apertura/cierre */
+    opacity: 0; /* Oculta el contenido por defecto */
+    padding: 0 15px; /* Añade espacio interno para mejorar el efecto */
+}
+
+.faq-answer.show {
+    max-height: 500px; /* Ajusta este valor según la altura máxima del contenido */
+    opacity: 1; /* Hace visible el contenido */
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* Animación de la flecha al hacer clic */
+.faq-question.open .arrow {
+    transform: translateY(-50%) rotate(180deg); /* Rote la flecha al abrir */
+}
+
+
+
+.faq-question:hover {
+    color: #7a7a7a; /* Cambia el color al hacer hover */
+}
+
+.faq-question:hover .arrow {
+    color: #7a7a7a; /* Cambia el color de la flecha al hacer hover */
+}
+
+/* Flechas hacia abajo cuando el contenido está oculto */
+.faq-item .arrow {
+    content: "\25BC"; /* Flecha hacia abajo */
+}
+
+/* Flechas hacia arriba cuando el contenido está visible */
+.faq-item.open .arrow {
+    content: "\25B2"; /* Flecha hacia arriba */
+}
+

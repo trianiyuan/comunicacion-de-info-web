@@ -74,18 +74,44 @@
                 </div>
             </div>
         </section>
+        
 
-        <section class="grid-section1">
-            <div class="grid-container1 container pt-5 pb-5">
-                <div class="grid-item1 image-content">
-                    <img src="imagenes/pri2.png" alt="Logo de la imagen">
+        <section class="faq-section">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">¿Qué tratamientos ofrecen en la clínica?
+                    <span class="arrow">&#9660;</span>
+                </h3>
+                <div class="faq-answer">
+                    <p>En nuestra clínica de medicina estética ofrecemos una amplia gama de tratamientos, incluyendo rejuvenecimiento facial, tratamientos de acné, depilación láser, y procedimientos de contorno corporal.</p>
                 </div>
-                <div class="grid-item1 text-content container pt-5">
-                    <h2 class="letra1 container">Acerca de Agata Blue</h2>
-                    <p class="container letra2">Agata Blue es una clínica médica estética, la cual tiene comoobjetivo de realizar tratamientos estéticos de manera responsable y profesional. Contamos con aparatología de última, certificados para la seguridad y eficacia de los resutlados. <br>Mi visión es tener un cuidado íntegro de la piel tanto médico como estético.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">¿Es doloroso el tratamiento de depilación láser?
+                    <span class="arrow">&#9660;</span>
+                </h3>
+                <div class="faq-answer">
+                    <p>La mayoría de los pacientes describen la sensación durante la depilación láser como una ligera molestia, similar a un leve golpe de goma elástica. Se utilizan técnicas de enfriamiento para minimizar cualquier incomodidad.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">¿Cuánto tiempo dura cada sesión?
+                    <span class="arrow">&#9660;</span>
+                </h3>
+                <div class="faq-answer">
+                    <p>La duración de cada sesión depende del tratamiento específico. En general, las sesiones pueden variar entre 30 minutos a una hora.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">¿Necesito algún cuidado especial después del tratamiento?
+                    <span class="arrow">&#9660;</span>
+                </h3>
+                <div class="faq-answer">
+                    <p>Después de la mayoría de los tratamientos, es importante seguir las indicaciones del especialista. Esto puede incluir evitar la exposición al sol y mantener la piel hidratada.</p>
                 </div>
             </div>
         </section>
+        
     </main>
 
     <footer class="bg-light text-dark py-4">
@@ -183,9 +209,52 @@
     <section class="text-center copycolor pt-3 pb-2">
         <p>&copy; 2024 Agata Blue Medical Clinic</p>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var questions = document.querySelectorAll('.faq-question');
+        
+            questions.forEach(function (question) {
+                question.addEventListener('click', function () {
+                    var answer = this.nextElementSibling;
+                    var isOpen = this.classList.contains('open');
+        
+                    // Cerrar todas las respuestas
+                    document.querySelectorAll('.faq-answer').forEach(function (item) {
+                        item.classList.remove('show');
+                        item.previousElementSibling.classList.remove('open');
+                    });
+        
+                    // Abrir la respuesta clickeada si no estaba abierta
+                    if (!isOpen) {
+                        answer.classList.add('show');
+                        this.classList.add('open');
+                    }
+                });
+            });
+        });
+        </script>
+        
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const questions = document.querySelectorAll('.faq-question');
 
-    
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                // Ocultar otras respuestas abiertas
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                answer.style.display = 'block';
+            }
+        });
+    });
+});
+
+    </script>
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
