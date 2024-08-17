@@ -40,7 +40,7 @@
                     </li>                    
                     
                     <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Dra. Priscilla</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctenos</a></li>
                 </ul>
             </div>
@@ -192,22 +192,42 @@
     
     
         
-        <section class="subscribe-grid pb-5">
-            <div class="subscribe-content">
-                <h2>Suscríbase a nuestro boletín</h2>
-                <p>¡No te pierdas ninguna de nuestras promociones!</p>
-                <form id="subscribe-form">
-                    <input type="email" id="email" class="form-control" placeholder="Introduce tu correo electrónico" required>
-                    <button type="submit" class="btn btn-custom">Suscribirse</button>
-                </form>
+    <section class="subscribe-grid pb-5">
+        <div class="subscribe-content">
+            <h2>Suscríbase a nuestro boletín</h2>
+            <p>¡No te pierdas ninguna de nuestras promociones!</p>
+            <form id="subscribe-form">
+                <input type="email" id="email" class="form-control" placeholder="Introduce tu correo electrónico">
+                <button type="submit" class="btn btn-custom">Suscribirse</button>
+            </form>
+        </div>
+        <div class="subscribe-images">
+            <div class="image-container">
+                <img src="imagenes/index1.jpg" alt="Imagen 1" class="image-top">
+                <img src="imagenes/index2.jpg" alt="Imagen 2" class="image-bottom">
             </div>
-            <div class="subscribe-images">
-                <div class="image-container">
-                    <img src="imagenes/index1.jpg" alt="Imagen 1" class="image-top">
-                    <img src="imagenes/index2.jpg" alt="Imagen 2" class="image-bottom">
-                </div>
+        </div>
+    </section>
+    
+
+<!-- Modal -->
+<div class="modal" id="subscribeModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">¡Gracias por suscribirte!</h5>
+                <button type="button" class="close" data-dismiss="modal">x</button>
             </div>
-        </section>
+            <div class="modal-body">
+                <p>¡Tu suscripción ha sido registrada exitosamente! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-custom" class="close" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
         <section class="blog text-center pb-5">
             <h1 class="section-title text-white">Blog</h1>
@@ -259,10 +279,10 @@
             <div class="row">
                 <!-- Sobre Nosotros -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#nosotros">Sobre Nosotros</a></h5>
+                    <h5 class="footer-title"><a href="sobre.html#nosotros">Sobre Nosotros</a></h5>
                     <hr class="footer-divider">
                     <p class="footer-info">
-                        <a href="https://example.com" class="footer-link">Dra. Priscilla González</a>
+                        <a href="sobre.html#pri" class="footer-link">Dra. Priscilla González</a>
                     </p>
                     <p class="footer-info">Asociada a @accolme</p>
                     <p class="footer-info">Código 17584</p>
@@ -275,7 +295,7 @@
     
                 <!-- Servicios No Invasivos -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#noinvasivos">Servicios No Invasivos</a></h5>
+                    <h5 class="footer-title"><a href="noinvasivos.html#noinvasivos">Servicios No Invasivos</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
                         <li><a href="noinvasivos.html#bioestimuladores" class="footer-link">Bioestimuladores de Colágeno</a></li>
@@ -291,7 +311,7 @@
     
                 <!-- Servicios Skin Care -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#piel">Cuidado de la Piel</a></h5>
+                    <h5 class="footer-title"><a href="cuidadopiel.html#piel">Cuidado de la Piel</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
                         <li><a href="cuidadopiel.html#dermocosmeticos" class="footer-link">Asesoramiento de Dermocosméticos</a></li>
@@ -302,37 +322,36 @@
                     </ul>                 
                 </div>
     
-                <!-- Servicios Skin Care -->
+                <!-- Servicios Láser -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#piel">Cuidado de la Piel</a></h5>
+                    <h5 class="footer-title"><a href="laser.html#laser">Servicios Láser</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
-                        <li><a href="cuidadopiel.html#dermocosmeticos" class="footer-link">Asesoramiento de Dermocosméticos</a></li>
-                        <li><a href="cuidadopiel.html#limpieza" class="footer-link">Limpieza Facial Profesional</a></li>
-                        <li><a href="cuidadopiel.html#hollywood-peel" class="footer-link">Hollywood Peel</a></li>
-                        <li><a href="cuidadopiel.html#peelings" class="footer-link">Peelings Químicos</a></li>
-                        <li><a href="cuidadopiel.html#dermaclinica" class="footer-link">Dermatología Clínica (Acné, hongos y alergias)</a></li>
-                    </ul>                 
+                        <li><a href="laser.html#podologia" class="footer-link">Podología Clínica (Eliminación de hongos con Láser)</a></li>
+                        <li><a href="laser.html#depilacion" class="footer-link">Depilación (Láser SHR)</a></li>
+                        <li><a href="laser.html#laser-ip" class="footer-link">Láser IPL (Manchas y rosácea)</a></li>
+                        <li><a href="laser.html#eliminacion-lesiones" class="footer-link">Eliminación de Lesiones (Verrugas, Acrocordones, Lunares)</a></li>
+                    </ul>
                 </div>
     
                 <!-- Productos -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#productos">Productos</a></h5>
+                    <h5 class="footer-title"><a href="productos.html#productos">Productos</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
-                        <li><a href="#mesoestetic" class="footer-link">Mesoestetic</a></li>
-                        <li><a href="#germaine" class="footer-link">Germaine de Capuccini</a></li>
-                        <li><a href="#sesderma" class="footer-link">Sesderma</a></li>
-                        <li><a href="#bioeffect" class="footer-link">BioEffect</a></li>
-                        <li><a href="#medihealth" class="footer-link">Medihealth Labs</a></li>
-                        <li><a href="#isdin" class="footer-link">ISDIN</a></li>
-                        <li><a href="#cantabria" class="footer-link">Cantabria Labs</a></li>
+                        <li><a href="productos.html#mesoestetic" class="footer-link">Mesoestetic</a></li>
+                        <li><a href="productos.html#germaine" class="footer-link">Germaine de Capuccini</a></li>
+                        <li><a href="productos.html#sesderma" class="footer-link">Sesderma</a></li>
+                        <li><a href="productos.html#bioeffect" class="footer-link">BioEffect</a></li>
+                        <li><a href="productos.html#medihealth" class="footer-link">Medihealth Labs</a></li>
+                        <li><a href="productos.html#isdin" class="footer-link">ISDIN</a></li>
+                        <li><a href="productos.html#cantabria" class="footer-link">Cantabria Labs</a></li>
                     </ul>
                 </div>
     
                 <!-- Contacto -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#contacto">Contacto</a></h5>
+                    <h5 class="footer-title"><a href="contacto.html#contacto">Contacto</a></h5>
                     <hr class="footer-divider">
                     <div class="contact-info">
                         <p><a href="https://www.instagram.com/agatabluemedicalclinic" target="_blank" class="contact-link"><i class="fab fa-instagram"></i> @agatabluemedicalclinic</a></p>
@@ -352,7 +371,36 @@
     </section>
     
     
-
+    <script>
+        // Obtener el modal y el botón de cerrar
+        var modal = document.getElementById('subscribeModal');
+        var closeButton = document.querySelector('.close');
+        
+        // Obtener el formulario
+        var form = document.getElementById('subscribe-form');
+        
+        // Mostrar el modal al enviar el formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+            
+            // Mostrar el modal
+            modal.style.display = 'block';
+        });
+        
+        // Ocultar el modal al hacer clic en el botón de cerrar
+        closeButton.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        
+        // Ocultar el modal si se hace clic fuera de él
+        window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+        </script>
+        
+        
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

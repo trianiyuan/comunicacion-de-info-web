@@ -7,8 +7,7 @@
     <link rel="icon" href="imagenes/logo.PNG" type="imagen">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sobre.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,7 +16,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <a class="navbar-brand" href="index.html">
                 <img src="imagenes/logo.PNG" alt="Agata Blue Medical Clinic" class="navbar-logo">
             </a>
@@ -40,7 +39,7 @@
                     </li>                    
                     
                     <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Dra. Priscilla</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctenos</a></li>
                 </ul>
             </div>
@@ -49,7 +48,44 @@
     
 
     <main>
-        
+        <section class="parallax-section"id="pri">
+            <div class="parallax-image1">
+                <div class="text-box">
+                    <h1>Dra. Priscilla González</h1>
+                    <h5>Directora Médica en Ágata Blue Medical Clinic</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid-container container pt-5 pb-5">
+                <div class="grid-item text-content container">
+                    <h2 class="letra1 container">Acerca de mi carrera profesional</h2>
+                    <ul class="container letra2">
+                        <li>Medicina y Cirugía (2018, UNIBE, Costa Rica)</li>
+                        <li>Técnico en Estética y Maquillaje (2019, IFE, Costa Rica)</li>
+                        <li>Máster en Medicina Estética y Tricología (2019-2020, UDIMA, España)</li>
+                        <li>Diplomado en Dermatología (2021, AMIR, México)</li>
+                        <li>Afiliación Asociación Costarricense de Longevidad y Medicina Estética de Costa Rica, ACCOLME (2022)</li>
+                    </ul>
+                </div>
+                <div class="grid-item image-content">
+                    <img src="imagenes/pri1.jpg" alt="Imagen Representativa de un Aceite">
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-section1">
+            <div class="grid-container1 container pt-5 pb-5">
+                <div class="grid-item1 image-content">
+                    <img src="imagenes/pri2.png" alt="Logo de la imagen">
+                </div>
+                <div class="grid-item1 text-content container pt-5">
+                    <h2 class="letra1 container">Acerca de Agata Blue</h2>
+                    <p class="container letra2">Agata Blue es una clínica médica estética, la cual tiene comoobjetivo de realizar tratamientos estéticos de manera responsable y profesional. Contamos con aparatología de última, certificados para la seguridad y eficacia de los resutlados. <br>Mi visión es tener un cuidado íntegro de la piel tanto médico como estético.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-light text-dark py-4">
@@ -57,10 +93,10 @@
             <div class="row">
                 <!-- Sobre Nosotros -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#nosotros">Sobre Nosotros</a></h5>
+                    <h5 class="footer-title"><a href="sobre.html#nosotros">Sobre Nosotros</a></h5>
                     <hr class="footer-divider">
                     <p class="footer-info">
-                        <a href="https://example.com" class="footer-link">Dra. Priscilla González</a>
+                        <a href="#pri" class="footer-link">Dra. Priscilla González</a>
                     </p>
                     <p class="footer-info">Asociada a @accolme</p>
                     <p class="footer-info">Código 17584</p>
@@ -73,64 +109,63 @@
     
                 <!-- Servicios No Invasivos -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#noinvasivos">Servicios No Invasivos</a></h5>
+                    <h5 class="footer-title"><a href="noinvasivos.html#noinvasivos">Servicios No Invasivos</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
-                        <li><a href="#bioestimuladores" class="footer-link">Bioestimuladores de Colágeno</a></li>
-                        <li><a href="#rellenos" class="footer-link">Rellenos Dérmicos (Ácido Hialurónico)</a></li>
-                        <li><a href="#armonizacion" class="footer-link">Armonización Facial (Rinomodelación, ojeras, pómulos...)</a></li>
-                        <li><a href="#toxina" class="footer-link">Toxina Botulínica (Nabota, Xeomin, Botox)</a></li>
-                        <li><a href="#mesoterapia" class="footer-link">Mesoterapia Facial (Microagujas o Nanoagujas)</a></li>
-                        <li><a href="#tricologia" class="footer-link">Tricología (Mesoterapia capilar y patologías del cabello)</a></li>
-                        <li><a href="#tricologia" class="footer-link">Radiofrecuencia Binary Premium</a></li>
-                        <li><a href="#tricologia" class="footer-link">Hilos Tensores</a></li>
+                        <li><a href="noinvasivos.html#bioestimuladores" class="footer-link">Bioestimuladores de Colágeno</a></li>
+                        <li><a href="noinvasivos.html#rellenos" class="footer-link">Rellenos Dérmicos (Ácido Hialurónico)</a></li>
+                        <li><a href="noinvasivos.html#armonizacion" class="footer-link">Armonización Facial (Rinomodelación, ojeras, pómulos...)</a></li>
+                        <li><a href="noinvasivos.html#toxina" class="footer-link">Toxina Botulínica (Nabota, Xeomin, Botox)</a></li>
+                        <li><a href="noinvasivos.html#mesoterapia" class="footer-link">Mesoterapia Facial (Microagujas o Nanoagujas)</a></li>
+                        <li><a href="noinvasivos.html#tricologia" class="footer-link">Tricología (Mesoterapia capilar y patologías del cabello)</a></li>
+                        <li><a href="noinvasivos.html#binary" class="footer-link">Radiofrecuencia Binary Premium</a></li>
+                        <li><a href="noinvasivos.html#hilos" class="footer-link">Hilos Tensores</a></li>
                     </ul>
                 </div>
     
                 <!-- Servicios Skin Care -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#piel">Cuidado de la Piel</a></h5>
+                    <h5 class="footer-title"><a href="cuidadopiel.html#piel">Cuidado de la Piel</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
-                        <li><a href="#dermocosmeticos" class="footer-link">Asesoramiento de Dermocosméticos</a></li>
-                        <li><a href="#limpieza" class="footer-link">Limpieza Facial Profesional</a></li>
-                        <li><a href="#hollywood-peel" class="footer-link">Hollywood Peel</a></li>
-                        <li><a href="#peelings" class="footer-link">Peelings Químicos</a></li>
-                        <li><a href="#mesoterapia" class="footer-link">Mesoterapia Facial (Microagujas o Nanoagujas)</a></li>
-                        <li><a href="#mesoterapia" class="footer-link">Dermatología Clínica (Acné, hongos y alergias)</a></li>
-                    </ul>
+                        <li><a href="cuidadopiel.html#dermocosmeticos" class="footer-link">Asesoramiento de Dermocosméticos</a></li>
+                        <li><a href="cuidadopiel.html#limpieza" class="footer-link">Limpieza Facial Profesional</a></li>
+                        <li><a href="cuidadopiel.html#hollywood-peel" class="footer-link">Hollywood Peel</a></li>
+                        <li><a href="cuidadopiel.html#peelings" class="footer-link">Peelings Químicos</a></li>
+                        <li><a href="cuidadopiel.html#dermaclinica" class="footer-link">Dermatología Clínica (Acné, hongos y alergias)</a></li>
+                    </ul>    
                 </div>
     
                 <!-- Servicios Láser -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#laser">Servicios Láser</a></h5>
+                    <h5 class="footer-title"><a href="laser.html#laser">Servicios Láser</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
-                        <li><a href="#podologia" class="footer-link">Podología Clínica (Eliminación de hongos con Láser)</a></li>
-                        <li><a href="#depilacion" class="footer-link">Depilación (Láser SHR)</a></li>
-                        <li><a href="#laser-ip" class="footer-link">Láser IPL (Manchas y rosácea)</a></li>
-                        <li><a href="#eliminacion-lesiones" class="footer-link">Eliminación de Lesiones (Verrugas, Acrocordones, Lunares)</a></li>
+                        <li><a href="laser.html#podologia" class="footer-link">Podología Clínica (Eliminación de hongos con Láser)</a></li>
+                        <li><a href="laser.html#depilacion" class="footer-link">Depilación (Láser SHR)</a></li>
+                        <li><a href="laser.html#laser-ip" class="footer-link">Láser IPL (Manchas y rosácea)</a></li>
+                        <li><a href="laser.html#eliminacion-lesiones" class="footer-link">Eliminación de Lesiones (Verrugas, Acrocordones, Lunares)</a></li>
                     </ul>
                 </div>
     
                 <!-- Productos -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#productos">Productos</a></h5>
+                    <h5 class="footer-title"><a href="productos.html#productos">Productos</a></h5>
                     <hr class="footer-divider">
                     <ul class="list-unstyled">
-                        <li><a href="#mesoestetic" class="footer-link">Mesoestetic</a></li>
-                        <li><a href="#germaine" class="footer-link">Germaine de Capuccini</a></li>
-                        <li><a href="#sesderma" class="footer-link">Sesderma</a></li>
-                        <li><a href="#bioeffect" class="footer-link">BioEffect</a></li>
-                        <li><a href="#medihealth" class="footer-link">Medihealth Labs</a></li>
-                        <li><a href="#isdin" class="footer-link">ISDIN</a></li>
-                        <li><a href="#cantabria" class="footer-link">Cantabria Labs</a></li>
+                        <li><a href="productos.html#mesoestetic" class="footer-link">Mesoestetic</a></li>
+                        <li><a href="productos.html#germaine" class="footer-link">Germaine de Capuccini</a></li>
+                        <li><a href="productos.html#sesderma" class="footer-link">Sesderma</a></li>
+                        <li><a href="productos.html#bioeffect" class="footer-link">BioEffect</a></li>
+                        <li><a href="productos.html#medihealth" class="footer-link">Medihealth Labs</a></li>
+                        <li><a href="productos.html#isdin" class="footer-link">ISDIN</a></li>
+                        <li><a href="productos.html#cantabria" class="footer-link">Cantabria Labs</a></li>
                     </ul>
                 </div>
     
                 <!-- Contacto -->
                 <div class="col-12 col-md-2 mb-3">
-                    <h5 class="footer-title"><a href="#contacto">Contacto</a></h5>
+                    <h5 class="footer-title"><a href="contacto.html#contacto">Contacto</a></h5>
                     <hr class="footer-divider">
                     <div class="contact-info">
                         <p><a href="https://www.instagram.com/agatabluemedicalclinic" target="_blank" class="contact-link"><i class="fab fa-instagram"></i> @agatabluemedicalclinic</a></p>
@@ -148,6 +183,8 @@
     <section class="text-center copycolor pt-3 pb-2">
         <p>&copy; 2024 Agata Blue Medical Clinic</p>
     </section>
+
+
     
     
 

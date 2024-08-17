@@ -281,178 +281,244 @@ ul.list-unstyled li {
     }
 }
 
-/*------------------------------------------------------------------*/
-
 .parallax-section {
     position: relative;
     overflow: hidden;
     height: 450px; /* Ajusta la altura según sea necesario */
 }
 
-.parallax-image1, .parallax-image2, .parallax-image3, .parallax-image4, .parallax-image5, .parallax-image6, .parallax-image7 {
+.parallax-image1 {
     background-size: cover;
+    background-image: url(../imagenes/pri0.jpg);
     background-position: center;
     background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.521);
+    box-shadow: inset 0 0 0 1000px rgba(41, 41, 41, 0.205);
     position: relative;
     background-repeat: no-repeat;
     height: 100%;
     display: flex;
     color: #fff;
     overflow: hidden;
+    align-items: center; /* Centra el contenido verticalmente */padding: 020px; /* Espaciado interno para que no quede pegado al borde */
 }
 
-.parallax-image1 {
-    background-image: url(../imagenes/meso0.jpg);
-}
-
-.parallax-image2 {
-    background-image: url(../imagenes/germ0.jpg);
-}
-
-.parallax-image3 {
-    background-image: url(../imagenes/ses0.jpg);
-}
-
-.parallax-image4 {
-    background-image: url(../imagenes/bio0.jpg);
-}
-
-.parallax-image5 {
-    background-image: url(../imagenes/medi0.jpg);
-}
-
-.parallax-image6 {
-    background-image: url(../imagenes/isdin0.jpg);
-}
-
-.parallax-image7 {
-    background-image: url(../imagenes/can0.jpg);
-}
-
-.parallax-content {
+.text-box {
     position: absolute;
-    bottom: 0; /* Alinea el contenido en la parte inferior */
-    left: 0;   /* Alinea el contenido a la izquierda */
-    padding: 1rem;
-    z-index: 1;
+    right: 450px; /* Ajusta la distancia del borde derecho */
+    top: 50%; /* Posiciona el cuadro en el centro vertical */
+    transform: translateY(-50%); /* Ajusta el cuadro para que esté centrado verticalmente */
+    background-color: rgba(136, 136, 136, 0.6); /* Fondo semi-transparente para el texto */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    max-width: 300px; /* Ajusta el ancho máximo del cuadro de texto */
 }
 
-.parallax-content h1 {
-    font-size: 2.5rem; /* Ajusta el tamaño del título */
-    margin: 0;
+.text-boxh1, .text-boxh2, .text-boxp {
+    margin: 0010px0; /* Espaciado entre elementos de texto */
+}
+
+/* Estilos generales para la sección */.grid-section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Color de fondo opcional */
+}
+
+/* Contenedor de la rejilla */.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 20px; /* Espacio entre columnas */
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+/* Estilo para el contenido de texto */.text-contenth2 {
+    margin-top: 0; /* Elimina el margen superior */
+    font-size: 24px; /* Tamaño del título */color: #333; /* Color del título */
+}
+
+.text-contentp {
+    margin: 10px00; /* Margen superior para el párrafo */font-size: 16px; /* Tamaño del texto */color: #666; /* Color del texto */
+}
+
+/* Estilo para la imagen */.image-contentimg {
+    width: 50%; /* La imagen ocupa el 100% del ancho de la columna */height: auto; /* Mantiene la proporción de la imagen */border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+/* Estilos responsivos */@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Añadir animaciones de entrada */@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.grid-section {
+    position: relative;
+    overflow: hidden;
+    background-color:#fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.text-content {
+    animation-name: slideInFromLeft;
+}
+
+.image-content {
+    animation-name: slideInFromRight;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000000 !important;
     font-family: 'Didact Gothic', sans-serif;
     font-weight: 900;
 }
 
-.parallax-content h2 {
-    font-size: 1.5rem; /* Ajusta el tamaño del subtítulo */
-    margin: 0;
-    font-family: 'Montserrat', sans-serif; 
+.letra1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 900;
 }
 
-.services-grid {
-    padding: 2rem 0;
+.letra2{
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 1.2rem;
+    
 }
 
-.grid {
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+ul,li {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 04px8pxrgba(0,0,0,0.2);
+}
+
+/* Agregar un efecto de transición para suavizar la entrada */.grid-item {
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Definir animaciones de entrada */@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos para la sección */.grid-section1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-container1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.grid-item {
-    background: #fff; /* Fondo blanco para cada item */
-    border-radius: 0.5rem; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
-    overflow: hidden; /* Evita que el contenido se salga del contenedor */
-    text-align: center;
-    padding: 1rem;
+/* Estilos para los elementos de la cuadrícula */.grid-item1 {
+    opacity: 0; /* Inicialmente oculto */animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-.grid-item img {
-    width: 100%; /* Imagen de ancho completo */
-    height: auto;/* Mantiene la proporción de la imagen */
-    border-bottom: 1px solid #ddd; /* Línea divisoria entre imagen y texto */
+.image-content {
+    animation-name: slideInFromLeft;
 }
 
-.grid-item h3 {
-    font-size: 1.25rem;
-    margin: 0.5rem 0;
+.text-content {
+    animation-name: slideInFromRight;
 }
 
-.grid-item p {
-    margin: 0.5rem 0;
+h2.letra1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000;
 }
 
-.price {
-    font-weight: bold; /* Resalta el precio */
-    color: #333; /* Color del precio */
+/* Estilos para el párrafo */p.letra2 {
+    font-size: 1.2rem;
+    color: #000000;
 }
 
-.btn-custom {
-    display: inline-block;
-    padding: 1rem;
-    color: #fff !important;
-    background-color: #888888c0 !important; /* Color del botón */
-    border-color: #c7c7c78a;
-    text-decoration: none; /* Sin subrayado en el botón */
-    border-radius: 35rem !important; /* Bordes redondeados del botón */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-}
-
-.btn-custom:hover {
-    background-color: #b9b9b9c0 !important; /* Color del botón al hacer hover */
-}
-
-/* Media queries para diseño responsive */
-@media (max-width: 768px) {
-    .parallax-image {
-        height: 60vh; /* Ajusta la altura para pantallas más pequeñas */
-    }
-
-    .parallax-content {
-        padding: 0.5rem; /* Menos espaciado en pantallas pequeñas */
-    }
-
-    .parallax-content h1 {
-        font-size: 1.75rem; /* Tamaño del título en pantallas pequeñas */
-    }
-
-    .parallax-content h2 {
-        font-size: 1.25rem; /* Tamaño del subtítulo en pantallas pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .parallax-image {
-        height: 50vh; /* Ajusta la altura para dispositivos móviles más pequeños */
-    }
-
-    .parallax-content h1 {
-        font-size: 1.5rem; /* Tamaño del título en dispositivos móviles más pequeños */
-    }
-
-    .parallax-content h2 {
-        font-size: 1rem; /* Tamaño del subtítulo en dispositivos móviles más pequeños */
-    }
-}
-
-
-@media (max-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas medianas */
-    }
-}
-
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr; /* 1 columna en dispositivos móviles más pequeños */
-    }
+/* Estilos para la imagen */img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 04px8pxrgba(0, 0, 0, 0.2);
 }

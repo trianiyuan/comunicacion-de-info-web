@@ -1,25 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Popup para la suscripción
-    const subscribeForm = document.getElementById("subscribe-form");
-    subscribeForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        const email = document.getElementById("email").value;
-        alert(`Gracias por suscribirte con el correo: ${email}`);
-        subscribeForm.reset();
-    });
-
-    // Popup para el formulario de contacto
-    const contactForm = document.getElementById("contact-form");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Gracias por tu mensaje, nos pondremos en contacto contigo pronto.");
-            contactForm.reset();
-        });
-    }
-});
-
-
     document.addEventListener('DOMContentLoaded', function () {
         var myCarousel = document.querySelector('#testimonialCarousel');
         var carousel = new bootstrap.Carousel(myCarousel, {
@@ -35,3 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const gridSection = document.querySelector('.grid-section');
+
+        functioncheckVisibility(); {
+            const sectionTop = gridSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.75) { // Ajusta el umbral según sea necesario
+                gridSection.classList.add('visible');
+            }
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('resize', checkVisibility);
+        checkVisibility(); // Ejecuta la función al cargar la página
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        $('#confirmationModal').modal('show');
+    });
